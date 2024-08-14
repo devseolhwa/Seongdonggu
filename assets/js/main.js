@@ -42,17 +42,17 @@ $(function(){
 	});
 
     // 센터소식
-    $(".thumbBtnGroup li").on("click", function () {
+    $(".noticeBtnGroup li").on("click", function () {
 		const index = $(this).index();
 		if($(this).hasClass("on") == false){
 			$(this).addClass("on").siblings().removeClass("on");
-			$(".thumbListGroup > li").stop().hide();
-			$(".thumbListGroup > li").eq(index).stop().fadeIn();
-			$(".thumbListGroup > li .aos-init").removeClass("aos-animate");
+			$(".noticeListGroup > li").stop().hide();
+			$(".noticeListGroup > li").eq(index).stop().fadeIn();
+			$(".noticeListGroup > li .aos-init").removeClass("aos-animate");
 			$(`[data-aos][data-aos][data-aos-duration="1000"], body[data-aos-duration="1000"] [data-aos]`).css("transition-duration","0s");
 			setTimeout(() => {
 				$(`[data-aos][data-aos][data-aos-duration="1000"], body[data-aos-duration="1000"] [data-aos]`).css("transition-duration","1s");
-				$(".thumbListGroup > li .aos-init").addClass("aos-animate");
+				$(".noticeListGroup > li .aos-init").addClass("aos-animate");
 			} , 100);
 		}		
 	});
@@ -118,17 +118,17 @@ $(function(){
     });
 
     // 협회주요활동 tab
-    $(".thumbBtnGroup li").click(function(){
+    $(".noticeBtnGroup li").click(function(){
 		const index = $(this).index();
 		if($(this).hasClass("on") == false){
 			$(this).addClass("on").siblings().removeClass("on");
-			$(".thumbListGroup > li").stop().hide();
-			$(".thumbListGroup > li").eq(index).stop().fadeIn();
-			$(".thumbListGroup > li .aos-init").removeClass("aos-animate");
+			$(".noticeListGroup > li").stop().hide();
+			$(".noticeListGroup > li").eq(index).stop().fadeIn();
+			$(".noticeListGroup > li .aos-init").removeClass("aos-animate");
 			$(`[data-aos][data-aos][data-aos-duration="1000"], body[data-aos-duration="1000"] [data-aos]`).css("transition-duration","0s");
 			setTimeout(() => {
 				$(`[data-aos][data-aos][data-aos-duration="1000"], body[data-aos-duration="1000"] [data-aos]`).css("transition-duration","1s");
-				$(".thumbListGroup > li .aos-init").addClass("aos-animate");
+				$(".noticeListGroup > li .aos-init").addClass("aos-animate");
 			} , 100);
 		}		
 	});
