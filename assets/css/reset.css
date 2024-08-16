@@ -23,9 +23,9 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {overflo
 select {padding: 0 28px 0 14px;background-image: url(../images/select_arrow.svg);background-position: calc(100% - 14px) center;background-repeat: no-repeat;border: 1px solid #ddd;box-sizing: border-box;-webkit-appearance: none;-moz-appearance: none;appearance: none;font-size: 14px;color: #444;font-weight: 400;}
 select::-ms-expand {display: none;}
 button {border: 0;background-color: transparent;}
-::selection{background-color: #ECEFF3;color: #00295D;}
-::-moz-selection {background-color: #ECEFF3;color: #00295D;}
-::-webkit-selection {background-color: #ECEFF3;color: #00295D;}
+::selection{background-color: #009843;color: #fff;}
+::-moz-selection {background-color: #009843;color: #fff;}
+::-webkit-selection {background-color: #009843;color: #fff;}
 
 /* scrollbar */
 body {overflow-y: overlay;}

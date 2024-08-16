@@ -17,7 +17,7 @@
         touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
-
+.slick-slider {width: 1px; min-width: 100%; *width: 100%; }
 .slick-list
 {
     position: relative;
@@ -101,6 +101,7 @@
 .slick-initialized .slick-slide
 {
     display: block;
+    /* width:1280px !important; */
 }
 .slick-loading .slick-slide
 {
@@ -115,5 +116,5 @@
     border: 1px solid transparent;
 }
 .slick-arrow.slick-hidden {
-    display: none;
+    /* display: none; */
 }
