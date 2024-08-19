@@ -103,11 +103,18 @@ $(function(){
     // gnb
     $(document).on("mouseenter focus", "#gnb > ul > li > a", function () {
         $(this).parent("li").addClass("active").siblings("li").removeClass("active");
-        $(this).next("ul").slideDown();
+        $("#gnb > ul > li > ul").slideDown();
+        //$(".gnbBg").slideDown();
+        return false;
+    }).on("mouseenter focus", "#gnb > ul > li", function () {
+        $(this).addClass("active").siblings("li").removeClass("active");
+        $("#gnb > ul > li > ul").slideDown();
+        //$(".gnbBg").slideDown();
         return false;
     }).on("mouseleave", "#gnb > ul > li", function () {
-        $(this).children("ul").slideUp();
         $(this).removeClass("active");
+        $("#gnb > ul > li > ul").slideUp();
+        //$(".gnbBg").slideUp();
         return false;
     });
 
@@ -142,15 +149,15 @@ $(function(){
         });
     });
 
-    // 상단으로
-    let btnTop = document.querySelector("#btnTop"),
+    // quickBar
+    let quickBar = document.querySelector(".quickBar"),
         headerH = 70;
 
     window.addEventListener("scroll", () => {
         if (window.scrollY > headerH) {
-            btnTop.classList.add("show");
+            quickBar.classList.add("show");
         } else {
-            btnTop.classList.remove("show");
+            quickBar.classList.remove("show");
         }
     });
     $("#btnTop").on("click", function(){
