@@ -74,9 +74,11 @@ $(function(){
         adaptiveHeight: true,
         variableWidth: true,
         responsive: [{
-            breakpoint: 767,
+            breakpoint: 1539,
             settings: {
-                arrows: false
+                slidesToShow : 3,
+                slidesToScroll: 1,
+                centerMode: true,
             }
         }]
     });

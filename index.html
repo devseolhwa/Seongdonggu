@@ -32,95 +32,59 @@
             </h1>
             <div id="gnb">
                 <ul>
-                    <li data-text="센터소개">
+                    <li>
                         <a href="#">센터소개</a>
-                        <div class="twoDeps">
-                            <div class="gnbTitle">
-                                <p>센터소개</p>
-                                <em>Center Information</em>
-                            </div>
-                            <ul>
-                                <li><a href="#">인사말</a></li>
-                                <li><a href="#">기관소개</a></li>
-                                <li><a href="#">조직도</a></li>
-                                <li><a href="#">오시는길</a></li>
-                            </ul>
-                        </div>
+                        <ul>
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">기관소개</a></li>
+                            <li><a href="#">조직도</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
                     </li>
-                    <li data-text="센터소식">
+                    <li>
                         <a href="#">센터소식</a>
-                        <div class="twoDeps">
-                            <div class="gnbTitle">
-                                <p>센터소식</p>
-                                <em>Center Information</em>
-                            </div>
-                            <ul>
-                                <li><a href="#">공지사항</a></li>
-                                <li><a href="#">경영공시</a></li>
-                                <li><a href="#">활동사진</a></li>
-                                <li><a href="#">언론보도</a></li>
-                            </ul>
-                        </div>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">경영공시</a></li>
+                            <li><a href="#">활동사진</a></li>
+                            <li><a href="#">언론보도</a></li>
+                        </ul>
                     </li>
-                    <li data-text="센터소식">
+                    <li>
                         <a href="#">센터사업</a>
-                        <div class="twoDeps">
-                            <div class="gnbTitle">
-                                <p>센터사업</p>
-                                <em>Center Information</em>
-                            </div>
-                            <ul>
-                                <li><a href="#">자원봉사교육</a></li>
-                                <li><a href="#">자원봉사단체</a></li>
-                                <li><a href="#">자원봉사캠프</a></li>
-                                <li><a href="#">기업사회공헌</a></li>
-                                <li><a href="#">자원봉사수요처</a></li>
-                            </ul>
-                        </div>
+                        <ul>
+                            <li><a href="#">자원봉사교육</a></li>
+                            <li><a href="#">자원봉사단체</a></li>
+                            <li><a href="#">자원봉사캠프</a></li>
+                            <li><a href="#">기업사회공헌</a></li>
+                            <li><a href="#">자원봉사수요처</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#">특성화사업</a>
-                        <div class="twoDeps">
-                            <div class="gnbTitle">
-                                <p>특성화사업</p>
-                                <em>Center Information</em>
-                            </div>
-                            <ul>
-                                <li><a href="#">성동온(溫)식빵</a></li>
-                                <li><a href="#">성동V-카드&착한가게</a></li>
-                                <li><a href="#">성동해외봉사</a></li>
-                            </ul>
-                        </div>
+                        <ul>
+                            <li><a href="#">성동온(溫)식빵</a></li>
+                            <li><a href="#">성동V-카드&착한가게</a></li>
+                            <li><a href="#">성동해외봉사</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#">참여신청</a>
-                        <div class="twoDeps">
-                            <div class="gnbTitle">
-                                <p>참여신청</p>
-                                <em>Center Information</em>
-                            </div>
-                            <ul>
-                                <li><a href="#">봉사활동 신청</a></li>
-                                <li><a href="#">봉사교육 신청</a></li>
-                                <li><a href="#">봉사단체 신청</a></li>
-                                <li><a href="#">수요처 신청</a></li>
-                            </ul>
-                        </div>
+                        <ul>
+                            <li><a href="#">봉사활동 신청</a></li>
+                            <li><a href="#">봉사교육 신청</a></li>
+                            <li><a href="#">봉사단체 신청</a></li>
+                            <li><a href="#">수요처 신청</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#">게시판</a>
-                        <div class="twoDeps">
-                            <div class="gnbTitle">
-                                <p>게시판</p>
-                                <em>Center Information</em>
-                            </div>
-                            <ul>
-                                <li><a href="#">자료실</a></li>
-                                <li><a href="#">Q&A</a></li>
-                                <li><a href="#">우수봉사자명단</a></li>
-                                <li><a href="#">아름다운기부</a></li>
-                            </ul>
-                        </div>
+                        <ul>
+                            <li><a href="#">자료실</a></li>
+                            <li><a href="#">Q&A</a></li>
+                            <li><a href="#">우수봉사자명단</a></li>
+                            <li><a href="#">아름다운기부</a></li>
+                        </ul>
                     </li>
                 </ul>
                 <div class="gnbBg"></div>
@@ -201,7 +165,8 @@
         <div id="main">
             <section class="section01">
                 <div class="visualWrap">
-                    <img src="assets/images/main/img_visual.jpg" alt="">
+                    <img src="assets/images/main/img_visual.jpg" alt="" class="mobileHide">
+                    <img src="assets/images/main/img_visual_m.jpg" alt="" class="mobileShow">
                     <p>
                         희망을 나누고 행복을 더하는 <br />
                         자원봉사 1번지
@@ -503,24 +468,26 @@
 
         <footer id="footer">
             <div class="footerInner">
-                <div class="footerLogo">
-                    <a href="index.html" title="메인페이지로"><img src="assets/images/layout/logo.svg" alt="(사)성동구자원봉사센터"></a>
-                </div>
                 <div class="footerInfo">
-                    <ul>
-                        <li><span>주소 :</span> 서울특별시 성동구 왕십리로 11길 19 4층</li>
-                        <li><span>대표 :</span> 배문찬</li>
-                        <li><span>Tel :</span> 02-499-5070</li>
-                        <li><span>E-Mail :</span> sdvolunteer@sd.go.kr</li>
-                    </ul>
-                    <p class="footerCopy">COPYRIGHT © 2005-2021 <span>Seongdong Volunteer Center.</span> ALL RIGHTS RESERVED.</p>
-                </div>
+                    <div class="footerLogo">
+                        <a href="index.html" title="메인페이지로"><img src="assets/images/layout/logo.svg" alt="(사)성동구자원봉사센터"></a>
+                    </div>
+                    <div class="footerAddr">
+                        <ul>
+                            <li><span>주소 :</span> 서울특별시 성동구 왕십리로 11길 19 4층</li>
+                            <li><span>대표 :</span> 배문찬</li>
+                            <li><span>Tel :</span> 02-499-5070</li>
+                            <li><span>E-Mail :</span> sdvolunteer@sd.go.kr</li>
+                        </ul>
+                        <p class="footerCopy">COPYRIGHT © 2005-2021 <span>Seongdong Volunteer Center.</span> ALL RIGHTS RESERVED.</p>
+                    </div>
+                </div><!-- footerInfo END -->
                 <div class="footerFamily">
                     <a href="#"><img src="assets/images/layout/img_familyLogo01.svg" alt="성동구 스마트포용도시"></a>
                     <a href="#"><img src="assets/images/layout/img_familyLogo02.svg" alt="서울특별시"></a>
                     <a href="#"><img src="assets/images/layout/img_familyLogo03.svg" alt="국세청"></a>
                 </div>
-            </div>
+            </div><!-- footerInner END -->
         </footer><!-- footer END -->
 
         <div class="quickBar">
