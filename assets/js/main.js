@@ -56,7 +56,7 @@ $(function(){
 				$(`[data-aos][data-aos][data-aos-duration="1000"], body[data-aos-duration="1000"] [data-aos]`).css("transition-duration","1s");
 				$(".noticeListGroup > li .aos-init").addClass("aos-animate");
 			} , 100);
-		}		
+		}
 	});
 
     // newsSlider
