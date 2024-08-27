@@ -36,12 +36,48 @@
 .greetingWrap .textGroup .sign{margin-top: 40px;font-size: 18px;color: #222;font-weight: 500;line-height: normal;letter-spacing: -1px;}
 .greetingWrap .textGroup .sign em{margin-left: 10px;font-size: 50px;font-weight: 400;letter-spacing: -0.6px;font-family: "Nanum Brush Script";}
 
+.imgWrap{position: relative;}
+.imgWrap:before{content: "";display: none;position: absolute;top: -95px;left: -125px;width: 215px;height: 162px;background-image: url(../images/layout/bg_before.svg);background-position: center;background-repeat: no-repeat;z-index: -1;}
+.imgWrap:after{content: "";position: absolute;top: 115px;right: -146px;width: 238px;height: 201px;background-image: url(../images/layout/bg_after.svg);background-position: center;background-repeat: no-repeat;z-index: -1;}
+
+/* 센터소개 - 조직도 */
+.taskWrap h4{padding: 150px 0 70px;text-align: center;font-size: 36px;color: #009843;font-weight: 500;line-height: 160%;letter-spacing: -0.6px;}
+.taskWrap h5{margin-bottom: 17px;font-size: 30px;color: #222;font-weight: 700;line-height: 40px;letter-spacing: -0.6px;}
+.taskWrap > ul + h5{margin-top: 100px;}
+.taskWrap > ul{display: flex;flex-direction: row;flex-wrap: wrap;align-items: stretch;border-top: 1px solid #A0A0A0;border-bottom: 1px solid #ddd;box-sizing: border-box;overflow: hidden;}
+.taskWrap > ul > li{position: relative;display: flex;align-items: center;flex-direction: row;flex-wrap: wrap;width: 50%;height: 230px;padding: 0 20px 25px;margin-bottom: -1px;margin-top: 50px;border-bottom: 1px solid #ddd;box-sizing: border-box;}
+.taskWrap > ul > li:nth-child(2n+2):before{content: "";position: absolute;left: 0;top: -25px;width: 1px;height: 100%;background: #DDD;}
+.taskWrap > ul > li .nameWrap{width: 40%;}
+.taskWrap > ul > li:nth-child(2n+2) .nameWrap{padding-left: 20px;box-sizing: border-box;}
+.taskWrap > ul > li .nameWrap .name{font-size: 30px;color: #000;font-weight: 400;line-height: 150%;letter-spacing: -0.6px;}
+.taskWrap > ul > li .nameWrap .name span{margin-left: 5px;font-size: 18px;color: #222;font-weight: 400;line-height: 150%;letter-spacing: -0.6px;}
+.taskWrap > ul > li .nameWrap .tel{margin-top: 12px;font-size: 20px;color: #666;font-weight: 400;line-height: 150%;letter-spacing: -0.6px;}
+.taskWrap > ul > li .dotList{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;align-items: flex-start;width: 60%;}
+.taskWrap > ul > li .dotList li{width: 50%;font-size: 18px;color: #666;font-weight: 400;line-height: 200%;letter-spacing: -0.6px;}
+.taskWrap > ul > li .dotList li:before{content: "";display: inline-block;width: 5px;height: 5px;margin-right: 10px;background: #009843;border-radius: 100%;vertical-align: 4px;}
+
+/* 특성화사업 - 성동온(溫) 식빵 */
+.sungdongonBreadWrap{position: relative;}
+.sungdongonBreadWrap:before{content: "";display: none;position: absolute;top: -95px;left: -125px;width: 215px;height: 162px;background-image: url(../images/layout/bg_before.svg);background-position: center;background-repeat: no-repeat;z-index: -1;}
+.sungdongonBreadWrap:after{content: "";position: absolute;top: 115px;right: -146px;width: 238px;height: 201px;background-image: url(../images/layout/bg_after.svg);background-position: center;background-repeat: no-repeat;z-index: -1;}
+.sungdongonBreadWrap ul{border-top: 1px solid #A0A0A0;border-bottom: 1px solid #ddd;box-sizing: border-box;}
+.sungdongonBreadWrap ul li{display: flex;align-items: flex-start;flex-direction: row;flex-wrap: wrap;justify-content: space-between;padding: 70px 33px 70px 50px;box-sizing: border-box;}
+.sungdongonBreadWrap ul li + li{border-top: 1px solid #ddd;}
+.sungdongonBreadWrap ul li strong{width: 40%;font-size: 36px;color: #222;font-weight: 500;line-height: 150%;letter-spacing: -1px;}
+.sungdongonBreadWrap ul li p{width: 60%;font-size: 22px;color: #333;font-weight: 400;line-height: 180%;letter-spacing: -1px;word-break: keep-all;}
+.sungdongonBreadWrap ul li .imageGroup{width: 60%;display: flex;align-items: center;justify-content: space-between;flex-direction: row;flex-wrap: nowrap;}
+.sungdongonBreadWrap ul li .imageGroup img{width: calc(33.3% - 15px);border-radius: 10px;}
+
 @media screen and (max-width: 1499px){
 
     #subVisual{height: 350px;}
 
     .greetingWrap .imgGroup{width: 45%;}
     .greetingWrap .textGroup{width: calc(55% - 50px);}
+
+    .taskWrap > ul > li{width: 100%;}
+    .taskWrap > ul > li:nth-child(2n+2):before{display: none;}
+    .taskWrap > ul > li:nth-child(2n+2) .nameWrap{padding-left: 0;}
 }
 
 @media screen and (max-width: 1199px){
@@ -59,13 +95,18 @@
     .subContent .subTitle{margin-bottom: 50px;}
     .subContent .subTitle h3{font-size: min(3.5vw, 40px);}
 
+    .sungdongonBreadWrap ul li{flex-direction: column;padding: 20px 0;}
+    .sungdongonBreadWrap ul li strong{width: 100%;font-size: 28px;}
+    .sungdongonBreadWrap ul li p{width: 100%;margin-top: 20px;font-size: 18px;}
+    .sungdongonBreadWrap ul li .imageGroup{width: 100%;margin-top: 20px;}
+
 }
 
 @media screen and (max-width: 767px){
 
     #subVisual{height: 240px;}
     #subVisual .visualbg.bg01:before{background-image: url(../images/sub/bg_subVisual01_m.jpg);}
-    #subVisual .visualbg.bg02:before{background-image: url(../images/sub/bg_subVisual02_m.jpg);}
+    #subVisual .visualbg.bg02:before{background-image: url(../images/sub/bg_subVisual01_m.jpg);}
     #subVisual .visualbg.bg03:before{background-image: url(../images/sub/bg_subVisual03_m.jpg);}
     #subVisual .visualbg.bg04:before{background-image: url(../images/sub/bg_subVisual04_m.jpg);}
     #subVisual .visualbg.bg05:before{background-image: url(../images/sub/bg_subVisual05_m.jpg);}
@@ -88,7 +129,25 @@
     .greetingWrap .textGroup p{margin-top: 20px;font-size: 15px;}
     .greetingWrap .textGroup .sign{margin-top: 25px;font-size: 14px;}
     .greetingWrap .textGroup .sign em{margin-left: 5px;font-size: 36px;}
+
+    .imgWrap:before{display: block;}
+
+    .taskWrap h4{padding: 50px 0 20px;font-size: 24px;text-align: left;}
+    .taskWrap h5{margin-bottom: 8px;font-size: 20px;}
+    .taskWrap > ul + h5{margin-top: 30px;}
+    .taskWrap > ul > li{height: auto;padding: 20px 0;margin-top: 0;}
+    .taskWrap > ul > li .nameWrap .name{font-size: 20px;}
+    .taskWrap > ul > li .nameWrap .name span{font-size: 14px;}
+    .taskWrap > ul > li .nameWrap .tel{margin-top: 8px;font-size: 15px;}
+    .taskWrap > ul > li .dotList li{width: 100%;font-size: 14px;}
+    .taskWrap > ul > li .dotList li:before{margin-right: 7px;vertical-align: 2px;}
     
+    .sungdongonBreadWrap:before{display: block;}
+    .sungdongonBreadWrap ul li strong{font-size: 19px;}
+    .sungdongonBreadWrap ul li p{font-size: 15px;}
+    .sungdongonBreadWrap ul li .imageGroup{flex-direction: column;}
+    .sungdongonBreadWrap ul li .imageGroup img{width: 100%;}
+    .sungdongonBreadWrap ul li .imageGroup img + img{margin-top: 20px;}
 }
 
 @keyframes scale{ 

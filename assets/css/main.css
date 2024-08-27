@@ -11,11 +11,11 @@
 .popupzoneSlider{max-width: 600px;}
 .popupzoneSlider .controlWrap{display: flex;align-items: center;justify-content: space-between;margin-bottom: 25px;}
 .popupzoneSlider .controlWrap .btnWrap{position: relative;display: flex;align-items: center;justify-content: space-between;width: 160px;}
-.btnWrap button{width: 50px;height: 50px;background-color: var(--white-color);background-image: url(../images/main/arrow_left_black.svg);background-size: 36px;background-position: center;background-repeat: no-repeat;border: 1px solid #DDD;border-radius: 100%;box-sizing: border-box;-webkit-transition: .3s;transition: .3s;overflow: hidden;text-indent: -9999px;white-space: nowrap;}
+.btnWrap button{width: 50px;height: 50px;background-color: var(--white-color);background-size: auto;background-position: center;background-repeat: no-repeat;border: 1px solid #DDD;border-radius: 100%;box-sizing: border-box;overflow: hidden;text-indent: -9999px;white-space: nowrap;}
 .btnWrap .btnPrev{background-image: url(../images/main/arrow_left_black.svg);background-size: 36px;}
 .btnWrap .btnNext{background-image: url(../images/main/arrow_left_black.svg);background-size: 36px;transform: rotate(180deg);}
 .btnWrap .btnPause{position: absolute;left: 55px;background-image: url(../images/main/icon_pause.svg);background-size: 11px 15px;}
-.btnWrap .btnPlay{position: absolute;left: 55px;background-image: url(../images/main/arrow_left_black.svg);background-size: 36px;}
+.btnWrap .btnPlay{position: absolute;left: 55px;background-image: url(../images/main/icon_play.svg);background-size: 24px;}
 .popupzoneSlider .controlWrap .totalWrap{font-size: 20px;color: #222;font-weight: 400;line-height: normal;}
 .popupzoneSlider .controlWrap .totalWrap strong{color: var(--main-color);font-weight: 700;}
 .sliderInner{width: 600px;height: 450px;border-radius: 20px;overflow: hidden;margin-bottom: 0 !important;}
@@ -123,7 +123,7 @@
     .btnWrap button{width: 33px;height: 33px;}
     .btnWrap .btnPrev, .btnWrap .btnNext{background-size: 24px;}
     .btnWrap .btnPause{left: 37px;background-size: 7px 12px;}
-    .btnWrap .btnPlay{left: 37px;}
+    .btnWrap .btnPlay{left: 37px;background-size: 16px;}
     .popupzoneSlider .controlWrap .totalWrap{font-size: 14px;}
     .sliderInner{height: auto;}
     .sliderInner .slideItem a{height: 0;padding-top: 87.144%;}
