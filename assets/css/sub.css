@@ -83,7 +83,9 @@
 .searchArea select{width: 100px;height: 44px;}
 .searchArea .searchInput{width: 200px;height: 44px;margin-left: 10px;border: 1px solid #DDD;box-sizing: border-box;}
 .searchArea .btnSearch{width: 86px;height: 44px;margin-left: 10px;background: #009843;font-size: 14px;;color: #FFF;font-weight: 500;line-height: normal;text-align: center;}
-.tableboardList {width: 100%;border-top: 2px solid #009843;border-spacing: 0;border-collapse: separate;font-size: 15px;line-height: 24px;}
+.tableboardList {position: relative;width: 100%;border-top: 2px solid #009843;border-spacing: 0;border-collapse: separate;font-size: 15px;line-height: 24px;}
+.tableboardList:before{content: "";display: none;position: absolute;top: -95px;left: -125px;width: 215px;height: 162px;background-image: url(../images/layout/bg_before.svg);background-position: center;background-repeat: no-repeat;z-index: -1;}
+.tableboardList:after{content: "";position: absolute;top: 115px;right: -146px;width: 238px;height: 201px;background-image: url(../images/layout/bg_after.svg);background-position: center;background-repeat: no-repeat;z-index: -1;}
 .tableboardList thead tr:last-child > * {border-bottom: 1px solid #A0A0A0;}
 .tableboardList th, .tableboardList td {height: 60px;padding: 15px 10px;text-align: center;box-sizing: border-box;}
 .tableboardList th {position: relative;background: #F9F9F9;color: #222;font-weight: 700;}
