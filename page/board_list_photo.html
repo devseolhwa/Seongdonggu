@@ -118,7 +118,7 @@
                             <strong>센터소식</strong>
                             <a href="../page/noticeList.html">센터소식</a>
                             <ul>
-                                <li><a href="../page/basicboard_list.html">공지사항</a></li>
+                                <li><a href="../page/board_list_basic.html">공지사항</a></li>
                                 <li><a href="#">경영공시</a></li>
                                 <li><a href="#">활동사진</a></li>
                                 <li><a href="#">언론보도</a></li>
@@ -189,35 +189,33 @@
                 <div class="inner">
                     <form action="">
                         <div class="snbList">
-                            <a href="../page/basicboard_list.html" class="on">공지사항</a>
+                            <a href="#">공지사항</a>
                             <a href="#">경영공시</a>
-                            <a href="#">활동사진</a>
+                            <a href="#" class="on">활동사진</a>
                             <a href="#">언론보도</a>
                         </div>
                         <div class="subTitle">
-                            <div class="ovh"><h3><span class="mainColorText">공지</span>사항</h3></div>
+                            <div class="ovh"><h3><span class="mainColorText">활동</span>사진</h3></div>
                         </div>
                         <div class="boardHeader">
-                            <div class="sortArea">
-                                <ul class="checkList">
-                                    <li>
-                                        <input type="radio" name="sort" id="sort01" checked />
-                                        <label for="sort01">전체</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" name="sort" id="sort02" />
-                                        <label for="sort02">모집</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" name="sort" id="sort03" />
-                                        <label for="sort03">채용</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" name="sort" id="sort04" />
-                                        <label for="sort04">안내</label>
-                                    </li>
-                                </ul>
-                            </div>
+                            <ul class="sortArea checkList">
+                                <li>
+                                    <input type="radio" name="sort" id="sort01" checked />
+                                    <label for="sort01">전체</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="sort" id="sort02" />
+                                    <label for="sort02">단체</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="sort" id="sort03" />
+                                    <label for="sort03">기업</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="sort" id="sort04" />
+                                    <label for="sort04">교육</label>
+                                </li>
+                            </ul>
                             <div class="searchArea">
                                 <select name="" id="">
                                     <option value="">전체</option>
@@ -228,133 +226,118 @@
                                 <button type="button" class="btnSearch">검색</button>
                             </div>
                         </div><!-- boardHeader END -->
-                        <table class="tableboardList">
-                            <caption>공지사항 게시판 목록이며 번호, 제목, 작성자, 작성일, 조회수, 첨부파일 제공</caption>
-                            <colgroup>
-                                <col style="width:150px;">
-                                <col style="width:800px;">
-                                <col style="width:100px;">
-                                <col style="width:140px;">
-                                <col style="width:100px;">
-                                <col style="width:120px;">
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th scope="col">번호</th>
-                                    <th scope="col">제목</th>
-                                    <th scope="col">작성자</th>
-                                    <th scope="col">작성일</th>
-                                    <th scope="col">조회수</th>
-                                    <th scope="col">첨부파일</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="mNone"><span class="noticeLabel">공지</span></td>
-                                    <td class="td_subject">
-                                        <a href="#">이곳은 제목이 들어가는 영역입니다. 이곳은 제목이 들어가는 영역입니다.</a>
-                                        <span class="newLabel">N</span>
-                                    </td>
-                                    <td class="mNone">운영자</td>
-                                    <td>2024.07.15</td>
-                                    <td class="hits">100</td>
-                                    <td><span class="fileLabel">파일있음</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="mNone">9</td>
-                                    <td class="td_subject">
-                                        <a href="#">이곳은 제목이 들어가는 영역입니다. 이곳은 제목이 들어가는 영역입니다.</a>
-                                        <span class="newLabel">N</span>
-                                    </td>
-                                    <td class="mNone">운영자</td>
-                                    <td>2024.07.15</td>
-                                    <td class="hits">100</td>
-                                    <td><span class="fileLabel">파일있음</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="mNone">8</td>
-                                    <td class="td_subject">
-                                        <a href="#">이곳은 제목이 들어가는 영역입니다. 이곳은 제목이 들어가는 영역입니다.</a>
-                                    </td>
-                                    <td class="mNone">운영자</td>
-                                    <td>2024.07.15</td>
-                                    <td class="hits">100</td>
-                                    <td><span class="fileLabel">파일있음</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="mNone">7</td>
-                                    <td class="td_subject">
-                                        <a href="#">이곳은 제목이 들어가는 영역입니다. 이곳은 제목이 들어가는 영역입니다.</a>
-                                    </td>
-                                    <td class="mNone">운영자</td>
-                                    <td>2024.07.15</td>
-                                    <td class="hits">100</td>
-                                    <td><span class="fileLabel">파일있음</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="mNone">6</td>
-                                    <td class="td_subject">
-                                        <a href="#">이곳은 제목이 들어가는 영역입니다. 이곳은 제목이 들어가는 영역입니다.</a>
-                                    </td>
-                                    <td class="mNone">운영자</td>
-                                    <td>2024.07.15</td>
-                                    <td class="hits">100</td>
-                                    <td><span class="fileLabel">파일있음</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="mNone">5</td>
-                                    <td class="td_subject">
-                                        <a href="#">이곳은 제목이 들어가는 영역입니다. 이곳은 제목이 들어가는 영역입니다.</a>
-                                    </td>
-                                    <td class="mNone">운영자</td>
-                                    <td>2024.07.15</td>
-                                    <td class="hits">100</td>
-                                    <td><span class="fileLabel">파일있음</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="mNone">4</td>
-                                    <td class="td_subject">
-                                        <a href="#">이곳은 제목이 들어가는 영역입니다. 이곳은 제목이 들어가는 영역입니다.</a>
-                                    </td>
-                                    <td class="mNone">운영자</td>
-                                    <td>2024.07.15</td>
-                                    <td class="hits">100</td>
-                                    <td><span class="fileLabel">파일있음</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="mNone">3</td>
-                                    <td class="td_subject">
-                                        <a href="#">이곳은 제목이 들어가는 영역입니다. 이곳은 제목이 들어가는 영역입니다.</a>
-                                    </td>
-                                    <td class="mNone">운영자</td>
-                                    <td>2024.07.15</td>
-                                    <td class="hits">100</td>
-                                    <td><span class="fileLabel">파일있음</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="mNone">2</td>
-                                    <td class="td_subject">
-                                        <a href="#">이곳은 제목이 들어가는 영역입니다. 이곳은 제목이 들어가는 영역입니다.</a>
-                                    </td>
-                                    <td class="mNone">운영자</td>
-                                    <td>2024.07.15</td>
-                                    <td class="hits">100</td>
-                                    <td><span class="fileLabel">파일있음</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="mNone">1</td>
-                                    <td class="td_subject">
-                                        <a href="#">이곳은 제목이 들어가는 영역입니다. 이곳은 제목이 들어가는 영역입니다.</a>
-                                    </td>
-                                    <td class="mNone">운영자</td>
-                                    <td>2024.07.15</td>
-                                    <td class="hits">100</td>
-                                    <td><span class="fileLabel">파일있음</span></td>
-                                </tr>
-                            </tbody>
-                        </table><!-- tableboardList END -->
+                        <ul class="boardListPhoto">
+                            <li>
+                                <a href="#">
+                                    <div class="imgArea">
+                                        <img src="../assets/images/sub/ex_img.jpg" alt="">
+                                    </div>
+                                    <div class="textArea">
+                                        <p class="title">이곳은 제목이 들어가는 영역입니다</p>
+                                        <p class="text">안녕하세요~ 성동구자원봉사센터 김동현 주임입니다! 오늘은 성동구자원봉사센터의 2024년 단체분들을 위한 소식을 들고 왔습니다!</p>
+                                        <ul class="info">
+                                            <li><p class="sort">단체활동사진</p></li>
+                                            <li>
+                                                <span class="date">2024.06.13</span>
+                                                <span class="user">운영자</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="imgArea">
+                                        <img src="../assets/images/sub/ex_img.jpg" alt="">
+                                    </div>
+                                    <div class="textArea">
+                                        <p class="title">이곳은 제목이 들어가는 영역입니다</p>
+                                        <p class="text">안녕하세요~ 성동구자원봉사센터 김동현 주임입니다! 오늘은 성동구자원봉사센터의 2024년 단체분들을 위한 소식을 들고 왔습니다!</p>
+                                        <ul class="info">
+                                            <li><p class="sort">교육활동사진</p></li>
+                                            <li>
+                                                <span class="date">2024.06.13</span>
+                                                <span class="user">운영자</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="imgArea">
+                                        <img src="../assets/images/sub/ex_img.jpg" alt="">
+                                    </div>
+                                    <div class="textArea">
+                                        <p class="title">이곳은 제목이 들어가는 영역입니다</p>
+                                        <p class="text">안녕하세요~ 성동구자원봉사센터 김동현 주임입니다! 오늘은 성동구자원봉사센터의 2024년 단체분들을 위한 소식을 들고 왔습니다!</p>
+                                        <ul class="info">
+                                            <li><p class="sort">단체활동사진</p></li>
+                                            <li>
+                                                <span class="date">2024.06.13</span>
+                                                <span class="user">운영자</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="imgArea">
+                                        <img src="../assets/images/sub/ex_img.jpg" alt="">
+                                    </div>
+                                    <div class="textArea">
+                                        <p class="title">이곳은 제목이 들어가는 영역입니다</p>
+                                        <p class="text">안녕하세요~ 성동구자원봉사센터 김동현 주임입니다! 오늘은 성동구자원봉사센터의 2024년 단체분들을 위한 소식을 들고 왔습니다!</p>
+                                        <ul class="info">
+                                            <li><p class="sort">교육활동사진</p></li>
+                                            <li>
+                                                <span class="date">2024.06.13</span>
+                                                <span class="user">운영자</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="imgArea">
+                                        <img src="../assets/images/sub/ex_img.jpg" alt="">
+                                    </div>
+                                    <div class="textArea">
+                                        <p class="title">이곳은 제목이 들어가는 영역입니다</p>
+                                        <p class="text">안녕하세요~ 성동구자원봉사센터 김동현 주임입니다! 오늘은 성동구자원봉사센터의 2024년 단체분들을 위한 소식을 들고 왔습니다!</p>
+                                        <ul class="info">
+                                            <li><p class="sort">단체활동사진</p></li>
+                                            <li>
+                                                <span class="date">2024.06.13</span>
+                                                <span class="user">운영자</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="imgArea">
+                                        <img src="../assets/images/sub/ex_img.jpg" alt="">
+                                    </div>
+                                    <div class="textArea">
+                                        <p class="title">이곳은 제목이 들어가는 영역입니다</p>
+                                        <p class="text">안녕하세요~ 성동구자원봉사센터 김동현 주임입니다! 오늘은 성동구자원봉사센터의 2024년 단체분들을 위한 소식을 들고 왔습니다!</p>
+                                        <ul class="info">
+                                            <li><p class="sort">단체활동사진</p></li>
+                                            <li>
+                                                <span class="date">2024.06.13</span>
+                                                <span class="user">운영자</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul><!-- boardListPhoto END -->
                         <div class="boardBtnGroup">
-                            <button type="button">작성하기</button>
+                            <button type="button" class="btnMainColor">작성하기</button>
                         </div>
                         <div class="paging"> 
                             <a href="#page_prev" id="page_prev">이전</a>

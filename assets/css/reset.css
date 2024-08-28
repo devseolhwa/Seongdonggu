@@ -20,7 +20,9 @@ strong, b {font-weight: 600;}
 caption, legend {position: absolute;top: -9999px;left: -9999px;}
 input, textarea, select, label, button {display: inline-block;vertical-align: middle;font-size: inherit;font-family: inherit;line-height: inherit;}
 button, input[type="button"], input[type="reset"], input[type="submit"] {overflow: visible;-webkit-appearance: button;cursor: pointer;}
-select {padding: 0 28px 0 14px;background-image: url(../images/layout/select_arrow.svg);background-position: calc(100% - 14px) center;background-repeat: no-repeat;border: 1px solid #ddd;box-sizing: border-box;-webkit-appearance: none;-moz-appearance: none;appearance: none;font-size: 14px;color: #444;font-weight: 400;}
+input[type="text"], input[type="password"]{width: 100%;height: 42px;padding: 0 10px;background-color: #fff;border: 1px solid #DCDCDC;border-radius: 5px;box-sizing: border-box;font-size: 15px;color: #666;font-weight: 400;line-height: normal;letter-spacing: -0.6px;}
+select {width: 100%;height: 42px;padding: 0 25px 0 10px;background-image: url(../images/layout/select_arrow.svg);background-position: calc(100% - 7px) center;background-repeat: no-repeat;border: 1px solid #DCDCDC;border-radius: 5px;box-sizing: border-box;-webkit-appearance: none;-moz-appearance: none;appearance: none;font-size: 15px;color: #666;font-weight: 400;line-height: normal;letter-spacing: -0.6px;}
+textarea {width: 100%;padding: 10px;border: 1px solid #DCDCDC;border-radius: 5px;box-sizing: border-box;font-size: 15px;color: #666;font-weight: 400;line-height: normal;letter-spacing: -0.6px;resize: none;}
 select::-ms-expand {display: none;}
 button {border: 0;background-color: transparent;}
 ::selection{background-color: var(--main-color);color: var(--white-color);}

@@ -50,9 +50,6 @@
 #gnb > ul > li.active > ul > li > a{color: #CCDED4;}
 #gnb > ul > li.active > ul > li > a:hover{color: var(--white-color);font-weight: 700;text-decoration: underline;}
 .gnbBg{display: none;position: absolute;top: 100px;left: 0;width: 100%;height: 300px;background: var(--white-color);z-index: -1;overflow: hidden;}
-
-
-
 .gnbBg:before {content: "";position: absolute;top: 140px;left: calc(50% - 500px);width: 142px;height: 134px;background-image: url(../images/layout/img_logoMark_sm.svg);background-position: center;background-repeat: no-repeat;opacity: 1;}
 .gnbBg:after {content: "";position: absolute;top: 37px;left: calc(50% + 580px);width: 269px;height: 254px;display: block;background-image: url(../images/layout/img_logoMark.svg);background-position: center;background-repeat: no-repeat;opacity: 0.03;}
 
