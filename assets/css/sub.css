@@ -60,10 +60,22 @@
 .taskWrap > ul > li .dotList{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;align-items: flex-start;width: 60%;}
 .taskWrap > ul > li .dotList li{width: 50%;}
 
+/* 센터소개 - 오시는 길 */
+.locationMap{border: 1px solid #ddd;border-radius: 10px;box-sizing: border-box;overflow: hidden;}
+.locationMap .root_daum_roughmap .wrap_controllers{border: 0;}
+.locationMap .root_daum_roughmap .border1,.locationMap .root_daum_roughmap .border2,.locationMap .root_daum_roughmap .border3, .locationMap .root_daum_roughmap .border4{display: none;}
+.locationInfo ul{display: flex;flex-direction: row;flex-wrap: wrap;align-items: center;justify-content: flex-start;border-top: 1px solid #009843;box-sizing: border-box;margin-top: 55px;}
+.locationInfo ul li{display: flex;align-items: center;flex-direction: row;flex-wrap: nowrap;width: 50%;padding: 30px 0;border-bottom: 1px solid #ddd;box-sizing: border-box;}
+.locationInfo ul li .img{display: flex;align-items: center;justify-content: center;width: 100px;height: 100px;background: #FFF;border-radius: 100%;border: 1px solid #DDD;box-sizing: border-box;}
+.locationInfo ul li .text{margin-left: 30px;}
+.locationInfo ul li strong{font-size: 22px;color: #333;font-weight: 500;line-height: 150%;letter-spacing: -0.6px;}
+.locationInfo ul li p{margin-top: 10px;font-size: 18px;color: #666;font-weight: 400;line-height: 160%;letter-spacing: -0.6px;word-break: keep-all;}
+
 /* 특성화사업 - 성동온(溫) 식빵 */
 .sungdongonBreadWrap{position: relative;}
 .sungdongonBreadWrap:before{content: "";display: none;position: absolute;top: -95px;left: -125px;width: 215px;height: 162px;background-image: url(../images/layout/bg_before.svg);background-position: center;background-repeat: no-repeat;z-index: -1;}
 .sungdongonBreadWrap:after{content: "";position: absolute;top: 115px;right: -146px;width: 238px;height: 201px;background-image: url(../images/layout/bg_after.svg);background-position: center;background-repeat: no-repeat;z-index: -1;}
+.sungdongonBreadWrap h4{margin: 130px 0 50px;font-size: 36px;color: #009843;font-weight: 500;line-height: 160%;letter-spacing: -0.6px;text-align: center;}
 .sungdongonBreadWrap ul{border-top: 1px solid #A0A0A0;border-bottom: 1px solid #ddd;box-sizing: border-box;}
 .sungdongonBreadWrap ul li{display: flex;align-items: flex-start;flex-direction: row;flex-wrap: wrap;justify-content: space-between;padding: 70px 33px 70px 50px;box-sizing: border-box;}
 .sungdongonBreadWrap ul li + li{border-top: 1px solid #ddd;}
@@ -265,6 +277,8 @@
     .subContent .subTitle{margin-bottom: 50px;}
     .subContent .subTitle h3{font-size: min(3.5vw, 40px);}
 
+    .locationInfo ul li{width: 100%;}
+
     .sungdongonBreadWrap ul li{flex-direction: column;padding: 20px 0;}
     .sungdongonBreadWrap ul li strong{width: 100%;font-size: 28px;}
     .sungdongonBreadWrap ul li p{width: 100%;margin-top: 20px;font-size: 18px;}
@@ -336,7 +350,16 @@
     .taskWrap > ul > li .nameWrap .tel{margin-top: 8px;font-size: 15px;}
     .taskWrap > ul > li .dotList li{width: 100%;}
     
+    .locationMap .wrap_map{height: 320px !important;}
+    .locationInfo ul{margin-top: 30px;}
+    .locationInfo ul li{padding: 20px 0;}
+    .locationInfo ul li .img{width: 60px;height: 60px;}
+    .locationInfo ul li .text{margin-left: 20px;}
+    .locationInfo ul li strong{font-size: 16px;}
+    .locationInfo ul li p{margin-top: 5px;font-size: 14px;}
+
     .sungdongonBreadWrap:before{display: block;}
+    .sungdongonBreadWrap h4{margin: 50px 0 20px; font-size: 21px;}
     .sungdongonBreadWrap ul li strong{font-size: 19px;}
     .sungdongonBreadWrap ul li p{font-size: 15px;}
     .sungdongonBreadWrap ul li .imageGroup{flex-direction: column;}
